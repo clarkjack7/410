@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="slidestyle.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div class="outer-container">
+    <div class="slideshow-container">
+    <div class="title">
+    <h1>A Shift at Cal Poly's Organic Farm</h1></div>
+        
+     <div class="project-topic">
+   <h1>Organic Farm Photos</h1>
+    </div>
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 10</div>
+  <img src="pics.for.web/overall410.jpg" style="width:100%">
+  <div class="text">SAN LUIS OBISPO || OCTOBER 21st, 2019 || You may have never heard of it, but Cal Poly is home to a nine acre organic farm. It can be located in the Horticulture and Crop Science Department, and is certified organic by the California Certified Organic Farmers. (CCOF) 
+</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 10</div>
+  <img src="pics.for.web/closeup410.jpg" style="width:100%">
+  <div class="text">The unsung hero, Hope’s phone and speaker serenading herself (left) and fellow novice farmer, Cal Poly junior Anthropology and Geology major Abigail Craig. (right)  “It’s really fun and special to be able to stick your hands in the dirt and make produce come home with you.” Craig said about why she likes working on the farm. 
+</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 10</div>
+  <img src="pics.for.web/interaction410.jpg" style="width:100%">
+  <div class="text">William (right) and Hope (left) use tools and their bare hands to pull weeds from the farm’s chard supply. “It’s a nice change up from being in a lab or in the classroom, actually being out, getting dirty, hands on.” Gallo said. 
+</div>
+</div>
+    
+<div class="mySlides fade">
+  <div class="numbertext">4 / 10</div>
+  <img src="pics.for.web/portrait410.jpg" style="width:100%">
+  <div class="text">One of the farm’s chard sprouts, after harvesting these veggies they will be available to the public at the local farmer’s market. 
+</div>
+</div>
+    
+<div class="mySlides fade">
+  <div class="numbertext">5 / 10</div>
+  <img src="pics.for.web/medium410.jpg" style="width:100%">
+  <div class="text">Cal Poly sophomore Environmental Management and Protection major Hope Springer (left) testing out some of the day’s harvest. While Cal Poly fifth year Nutrition major William Gallo (right) inspects his before eating. 
+</div>
+</div>
+    
+<div class="mySlides fade">
+  <div class="numbertext">6 / 10</div>
+  <img src="pics.for.web/sequenceone410.jpg" style="width:100%">
+  <div class="text">Hope makes a quick trip to the farm refrigerator to take inventory of the current crops.  
+</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 10</div>
+  <img src="pics.for.web/seqeuncetwo410.jpg" style="width:100%">
+  <div class="text">Crops are brought here the same day of harvesting in order to maintain their freshness. 
+</div>
+</div>
+    
+<div class="mySlides fade">
+  <div class="numbertext">8 / 10</div>
+  <img src="pics.for.web/sequencethree410.jpg" style="width:100%">
+  <div class="text">Only organic produce is permitted inside this area. This prevents commingling; the result of organic produce coming into contact with non-organic produce. 
+
+</div>
+</div>
+    
+<div class="mySlides fade">
+  <div class="numbertext">9 / 10</div>
+  <img src="pics.for.web/signature410.jpg" style="width:100%">
+  <div class="text">Cal Poly fourth year Agriculture and Environmental Plant Science major Gary Gray (right), carries the day’s squash and pumpkin harvest back to their golf cart, while Hope (left) was given the task of choosing the best of the bunch.  
+</div>
+</div>
+    
+<div class="mySlides fade">
+  <div class="numbertext">10 / 10</div>
+  <img src="pics.for.web/clincher410.jpg" style="width:100%">
+  <div class="text">After the cart was loaded up Hope picked out the winning squash, “It has the best shape and feels the best, sorry guys.” Hope said. Apologizing to Abigail and William who had both picked different squash finalists. 
+</div>
+</div>
+    
+    
+    
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span>
+  <span class="dot" onclick="currentSlide(10)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html> 
